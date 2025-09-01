@@ -18,6 +18,6 @@ class NeedHealer:
     def update(self):
         for champs in self.campeoes:
             if 0.30 * champs.lifemax <= champs.vida <= 0.4 * champs.lifemax:
-                print(f"AVISO - ({champs.champ}) - PRECISA DE CURA!")
+                print(f"AVISO TIME 1 - ({champs.champ}) - PRECISA DE CURA!")
                 
 

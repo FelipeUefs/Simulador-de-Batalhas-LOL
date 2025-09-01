@@ -17,7 +17,7 @@ from EstrategiaDeAtaque import AtaqueEmArea, AtaqueCritico, RouboDeVida
 import random
 from Observer import NeedHealer
 
-def pancadariaGeneralizada(time1, time2, observer_time1, observer_time2):
+def pancadariaGeneralizada(time1, time2, observer_time1):#, observer_time2):
     print("TIME 1")
     time1.listar_Time()
     print("\nTIME 2")
@@ -40,7 +40,7 @@ def pancadariaGeneralizada(time1, time2, observer_time1, observer_time2):
                 apanha = random.choice(time2.campeoes)
 
             bate.atk_basico(apanha, time2)
-            observer_time2.update()
+            #observer_time2.update()
         else:
             print("\n-Time 2 ataca-")
 
@@ -95,9 +95,9 @@ def main():
     time2.adicionar_campeao(costureira)
     time2.adicionar_campeao(viajante)
     time2.adicionar_campeao(atiradora)
-    observer_time2 = NeedHealer(time2.campeoes)
+    #observer_time2 = NeedHealer(time2.campeoes)
 
-    pancadariaGeneralizada(time1, time2, observer_time1, observer_time2)
+    pancadariaGeneralizada(time1, time2, observer_time1) #observer_time2)
 
 main()
 
