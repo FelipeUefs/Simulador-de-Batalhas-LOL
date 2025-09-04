@@ -17,7 +17,7 @@ class NeedHealer:
 
     def update(self):
         for champs in self.campeoes:
-            if 0.30 * champs.lifemax <= champs.vida <= 0.4 * champs.lifemax:
+            if 0.30 * champs.lifemax <= champs.vida <= 0.4 * champs.lifemax: #intervalo entre 30% e 40% vida
                 print(f"AVISO TIME 1 - ({champs.champ}) - PRECISA DE CURA!")
                 
-
+# Ponto de Melhoria : Adicionar um Observer diferente para o time 2
