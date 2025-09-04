@@ -28,7 +28,7 @@ class RouboDeVida(EstrategiaDeAtaque):
 class AtaqueEmArea(EstrategiaDeAtaque):
     def atacar(self, atacante, inimigo, time_inimigo):
         dano_area = 20 * atacante.nivel
-        print(f"Mordekaiser causou dano em area ao time inimigo")
+        print(f"{atacante.champ} causou dano em area ao time inimigo")
         time_inimigo.receber_dano(dano_area, atacante)
         return dano_area
 
